@@ -85,7 +85,24 @@ FilterableLayout is written by Flowing Code S.A.
 
 Here is a simple example on how to try out the add-on component:
 
-<...>
+        VerticalLayout content = new VerticalLayout();
+        content.setSpacing(true);
+    	
+        VerticalLayout vl = new VerticalLayout();
+		...
+		
+        TextField filter = createTextField("Filter");
+        FilterableLayoutExtension flayout = new FilterableLayoutExtension(filter,vl);
+        flayout.setFilteredStyleName("filtered");
+        filter.setWidth("100%");
+        CheckBox cb = new CheckBox("Hide filtered components");
+        cb.setValue(true);
+        cb.addValueChangeListener(e->{
+        	flayout.setHideFilteredComponents(e.getValue());
+        	flayout.filterComponents(filter.getValue(), vl);
+        });
+
+        content.addComponents(filter,cb,vl);
 
 For a more comprehensive example, see com.flowingcode.vaadin.addons.fle.demo.DemoUI
 
