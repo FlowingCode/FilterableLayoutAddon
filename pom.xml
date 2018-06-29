@@ -11,6 +11,39 @@
 	<prerequisites>
 		<maven>3</maven>
 	</prerequisites>
+	
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>Flowing Code</name>
+		<url>https://www.flowingcode.com</url>
+	</organization>
+
+	<scm>
+		<url>git://github.com/FlowingCode/FilterableLayoutAddon.git</url>
+		<connection>scm:git:git://github.com/FlowingCode/FilterableLayoutAddon.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/FilterableLayoutAddon.git</developerConnection>
+		<tag>FilterableForm Layout Add-on for Vaadin</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/FlowingCode/FilterableLayoutAddon/issues</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<repositories>
+		<repository>
+			<id>vaadin-addons</id>
+			<url>http://maven.vaadin.com/vaadin-addons</url>
+		</repository>
+	</repositories>
 
 	<modules>
 		<module>filterable-layout-addon</module>

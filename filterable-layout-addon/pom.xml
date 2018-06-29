@@ -108,7 +108,6 @@
 							<!-- Package format version - do not change -->
 							<Vaadin-Package-Version>1</Vaadin-Package-Version>
 							<Vaadin-License-Title>${Vaadin-License-Title}</Vaadin-License-Title>
-							<Vaadin-Widgetsets>com.flowingcode.vaadin.addons.ff.WidgetSet</Vaadin-Widgetsets>
 						</manifestEntries>
 					</archive>
 				</configuration>

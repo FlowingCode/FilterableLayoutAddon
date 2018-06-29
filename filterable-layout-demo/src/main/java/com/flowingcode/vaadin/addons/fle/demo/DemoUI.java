@@ -43,7 +43,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
 
 @Theme("demo")
-@Title("FilterableForm Add-on Demo")
+@Title("Filterable Layout Add-on Demo")
 @SuppressWarnings("serial")
 public class DemoUI extends UI
 {
