@@ -4,7 +4,7 @@
 	<groupId>com.flowingcode.vaadin.addons</groupId>
 	<artifactId>filterable-layout-demo</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>Filterable Layout Add-on Demo</name>
 
 	<prerequisites>
@@ -30,7 +30,7 @@
 		<url>git://github.com/FlowingCode/FilterableLayoutAddon.git</url>
 		<connection>scm:git:git://github.com/FlowingCode/FilterableLayoutAddon.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/FilterableLayoutAddon.git</developerConnection>
-		<tag>filterable-layout-addon-1.0.0</tag>
+		<tag>FilterableForm Layout Add-on for Vaadin</tag>
 	</scm>
 
 	<issueManagement>
