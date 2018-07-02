@@ -8,7 +8,7 @@ Try the add-on demo at http://addons.flowingcode.com/filterablelayout
 
 ## Download release
 
-Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/filterable-layout
+Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to https://vaadin.com/directory/component/filterable-layout-add-on
 
 ## Building and running demo
 
