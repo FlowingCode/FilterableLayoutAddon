@@ -28,7 +28,6 @@ import com.flowingcode.vaadin.addons.fle.FilterableLayoutExtension;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.CheckBox;
@@ -40,7 +39,6 @@ import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.Window;
 
 @Theme("demo")
 @Title("Filterable Layout Add-on Demo")
@@ -55,13 +53,7 @@ public class DemoUI extends UI
 
     @Override
     protected void init(VaadinRequest request) {
-    
-    	Window w = new Window("Filterable Layout Demo");
-        w.setWidth("1100px");
-        w.setHeight("700px");
-        int height = Page.getCurrent().getBrowserWindowHeight();
-        int width = Page.getCurrent().getBrowserWindowWidth();
-        w.setPosition(((int)(width-w.getWidth())/2), ((int)(height - w.getHeight())/2));
+    	
         
         VerticalLayout content = new VerticalLayout();
         content.setSpacing(true);
@@ -99,10 +91,7 @@ public class DemoUI extends UI
         });
 
         content.addComponents(filter,cb,vl);
-        
-        w.setContent(content);
-
-        UI.getCurrent().addWindow(w);
+        setContent(content);
     }
 
 	private Component createDateField(String string) {
