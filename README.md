@@ -1,3 +1,5 @@
+[![Build Status](https://jenkins.flowingcode.com/buildStatus/icon?job=FilterableLayout-addon)](https://jenkins.flowingcode.com/job/FilterableLayout-addon)
+
 # Filterable Layout Add-on for Vaadin 8
 
 Filterable Layout is an extension for Vaadin 8, that allows you to build forms that can be filtered to only display components with a certain caption.
