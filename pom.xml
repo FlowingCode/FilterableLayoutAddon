@@ -4,7 +4,7 @@
 	<groupId>com.flowingcode.vaadin.addons</groupId>
 	<artifactId>filterable-layout-addon</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
-	<name>FilterableForm Add-on Root Project</name>
+	<name>Filterable Layout Add-on</name>
 
 	<prerequisites>
 		<maven>3</maven>
