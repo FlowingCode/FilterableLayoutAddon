@@ -1,4 +1,4 @@
-[![Build Status](https://jenkins.flowingcode.com/buildStatus/icon?job=FilterableLayout-addon)](https://jenkins.flowingcode.com/job/FilterableLayout-addon)
+[![Build Status](https://jenkins.flowingcode.com/buildStatus/icon?job=FilterableLayout-8-addon)](https://jenkins.flowingcode.com/job/FilterableLayout-8-addon)
 
 # Filterable Layout Add-on for Vaadin 8
 
