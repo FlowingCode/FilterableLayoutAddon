@@ -27,6 +27,7 @@ import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.checkbox.Checkbox;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.datepicker.DatePicker;
+import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.tabs.Tab;
@@ -40,6 +41,7 @@ import com.vaadin.flow.router.Route;
  */
 @SuppressWarnings("serial")
 @Route("")
+@CssImport("styles/styles.css")
 public class DemoView extends VerticalLayout {
 	private static final String SALES_INFORMATION = "Sales Information";
 	private static final String COMPANY_INFORMATION = "Company Information";

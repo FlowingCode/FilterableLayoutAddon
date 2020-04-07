@@ -66,23 +66,30 @@ public class FilterableLayoutExtension {
 	private boolean hideFilteredElements(String filter, Iterator<Element> iterator) {
 		boolean result = false;
 		while (iterator.hasNext()) {
+			boolean filteredContainer = false;
 			Element element = iterator.next();
 			if (element.getChildCount()>0) {
 				Iterator<Element> it = element.getChildren().iterator();
-				element.setVisible(hideFilteredElements(filter, it));
+				boolean visible = hideFilteredElements(filter, it);
+				element.setVisible(visible);
+				result = result | visible;
+				filteredContainer = visible;
 			}
 			if (containersToFilter.containsKey(element)) {
 				Iterator<Element> it = containersToFilter.get(element).getChildren().iterator();
-				element.setVisible(hideFilteredElements(filter, it));
+				boolean visible = hideFilteredElements(filter, it);
+				element.setVisible(visible);
+				result = result | visible;
+				filteredContainer = visible;
 			}
 			String captionToFilter = element.getProperty("label");
 			if (captionToFilter==null) captionToFilter = element.getText();
-			boolean filterMatched = filterMatch(filter,captionToFilter);
+			boolean filterMatched = filterMatch(filter,captionToFilter) || filteredContainer;
 			try {
 				boolean visible = filterMatched || !hideFilteredComponents;
 				element.setVisible(visible);
 				result = result || filterMatched;
-				if (filteredStyleName!=null && result && filter!=null && !filter.equals("")) {
+				if (filteredStyleName!=null && filterMatched && filter!=null && !filter.equals("") && !filteredContainer) {
 					element.getClassList().add(filteredStyleName);
 				} else {
 					element.getClassList().remove(filteredStyleName);
@@ -101,7 +108,7 @@ public class FilterableLayoutExtension {
 	 * @return true if the filter matches the caption, so the component has to remain visible
 	 */
 	private boolean filterMatch(String filter, String caption) {
-		if (filter==null || caption==null || "".equals(filter) || "".equals(caption))
+		if (filter==null || /*caption==null ||*/ "".equals(filter) /*|| "".equals(caption)*/)
 			return true;
 		return (caption.toLowerCase().indexOf(filter.toLowerCase())>-1);
 	}
