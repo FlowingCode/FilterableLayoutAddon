@@ -1,10 +1,8 @@
-package com.flowingcode.vaadin.addons.fle;
-
 /*-
  * #%L
  * Filterable Layout Add-on
  * %%
- * Copyright (C) 2018 Flowing Code
+ * Copyright (C) 2018 - 2020 Flowing Code
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +17,9 @@ package com.flowingcode.vaadin.addons.fle;
  * limitations under the License.
  * #L%
  */
+
+package com.flowingcode.vaadin.addons.fle;
+
 
 import java.util.HashMap;
 
