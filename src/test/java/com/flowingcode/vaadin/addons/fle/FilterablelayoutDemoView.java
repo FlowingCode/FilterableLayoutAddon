@@ -36,7 +36,7 @@ import java.util.Arrays;
 
 @SuppressWarnings("serial")
 @Route(value = "filterablelayout", layout = DemoLayout.class)
-@StyleSheet("context://frontend/styles/demo-styles.css")
+@StyleSheet("context://frontend/styles/filterable-layout/demo-styles.css")
 public class FilterablelayoutDemoView extends VerticalLayout {
 	private static final String SALES_INFORMATION = "Sales Information";
 	private static final String COMPANY_INFORMATION = "Company Information";
