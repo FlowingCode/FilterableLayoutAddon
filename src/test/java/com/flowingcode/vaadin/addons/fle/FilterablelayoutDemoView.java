@@ -1,34 +1,11 @@
-/*-
- * #%L
- * Filterable Layout Add-on
- * %%
- * Copyright (C) 2018 - 2020 Flowing Code
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
+package com.flowingcode.vaadin.addons.fle;
 
-package com.flowingcode.vaadin.addons.fle.demo;
-
-
-import java.util.Arrays;
-
-import com.flowingcode.vaadin.addons.fle.FilterableLayoutExtension;
+import com.flowingcode.vaadin.addons.DemoLayout;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.checkbox.Checkbox;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.datepicker.DatePicker;
-import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.tabs.Tab;
@@ -36,19 +13,17 @@ import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.Route;
+import java.util.Arrays;
 
-/**
- * @author Martin Lopez / Flowing Code
- */
 @SuppressWarnings("serial")
-@Route("")
-@CssImport("styles/styles.css")
-public class DemoView extends VerticalLayout {
+@Route(value = "filterablelayout", layout = DemoLayout.class)
+@StyleSheet("context://frontend/styles/demo-styles.css")
+public class FilterablelayoutDemoView extends VerticalLayout {
 	private static final String SALES_INFORMATION = "Sales Information";
 	private static final String COMPANY_INFORMATION = "Company Information";
 	private static final String EMPLOYEE_INFORMATION = "Employee Information";
 
-	public DemoView() {
+	public FilterablelayoutDemoView() {
 		VerticalLayout content = new VerticalLayout();
 		content.setSpacing(true);
 
