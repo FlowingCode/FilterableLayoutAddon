@@ -37,7 +37,7 @@ import com.vaadin.flow.dom.Element;
  * @author mlopez
  *
  */
-public class FilterableLayoutExtension {
+public class FilterableLayoutExtension implements Serializable {
 	
 	private String filteredStyleName=null;
 	
