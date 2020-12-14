@@ -21,6 +21,7 @@
 package com.flowingcode.vaadin.addons.fle;
 
 
+import java.io.Serializable;
 import java.util.HashMap;
 
 import java.util.Iterator;
@@ -73,14 +74,14 @@ public class FilterableLayoutExtension {
 				Iterator<Element> it = element.getChildren().iterator();
 				boolean visible = hideFilteredElements(filter, it);
 				element.setVisible(visible);
-				result = result | visible;
+				result |= visible;
 				filteredContainer = visible;
 			}
 			if (containersToFilter.containsKey(element)) {
 				Iterator<Element> it = containersToFilter.get(element).getChildren().iterator();
 				boolean visible = hideFilteredElements(filter, it);
 				element.setVisible(visible);
-				result = result | visible;
+				result |= visible;
 				filteredContainer = visible;
 			}
 			String captionToFilter = element.getProperty("label");
