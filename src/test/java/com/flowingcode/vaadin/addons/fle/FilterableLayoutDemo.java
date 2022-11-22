@@ -19,6 +19,7 @@
  */
 package com.flowingcode.vaadin.addons.fle;
 
+import com.flowingcode.vaadin.addons.demo.DemoSource;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.checkbox.Checkbox;
 import com.vaadin.flow.component.combobox.ComboBox;
@@ -30,9 +31,14 @@ import com.vaadin.flow.component.tabs.Tab;
 import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
 import java.util.Arrays;
 
 @SuppressWarnings("serial")
+@PageTitle("Filterable Layout Demo")
+@DemoSource
+@Route(value = "filterablelayout/filterablelayout", layout = FilterablelayoutDemoView.class)
 @StyleSheet("context://frontend/styles/filterable-layout/demo-styles.css")
 public class FilterableLayoutDemo extends VerticalLayout {
 	private static final String SALES_INFORMATION = "Sales Information";
