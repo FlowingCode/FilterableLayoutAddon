@@ -23,6 +23,14 @@
 		<tag>FilterableForm Layout Add-on for Vaadin</tag>
 	</scm>
 
+        <developers>
+            <developer>
+                <id>flowingcode</id>
+                <organization>Flowing Code</organization>
+                <organizationUrl>https://www.flowingcode.com</organizationUrl>
+            </developer>
+        </developers>
+	
 	<issueManagement>
 		<system>GitHub</system>
 		<url>https://github.com/FlowingCode/FilterableLayoutAddon/issues</url>
