@@ -68,7 +68,7 @@ Then, follow these steps for creating a contribution:
 
 This add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-AppLayout is written by Flowing Code S.A.
+Filterable Layout Add-on is written by Flowing Code S.A.
 
 # Developer Guide
 
