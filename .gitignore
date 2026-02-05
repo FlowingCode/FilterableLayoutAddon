@@ -4,6 +4,11 @@
 /webpack.config.js
 /webpack.generated.js
 /target
+/types.d.ts*
+/tsconfig.json*
 /.settings
 /.project
 /.classpath
+/frontend/generated
+/frontend/index.html
+/src/main/bundles
