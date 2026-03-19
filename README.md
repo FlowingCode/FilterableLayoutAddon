@@ -7,6 +7,10 @@
 
 Filterable Layout is an extension for Vaadin 14+, that allows you to build forms that can be filtered to only display components with a certain caption.
 
+## Supported versions
+
+Supported versions: Vaadin 14-25 (add-on version 2.x)
+
 ## Online demo
 
 [Online demo here](http://addonsv14.flowingcode.com/filterablelayout)
