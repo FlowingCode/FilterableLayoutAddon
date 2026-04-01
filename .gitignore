@@ -12,3 +12,4 @@
 /frontend/generated
 /frontend/index.html
 /src/main/bundles
+/.claude/settings.local.json
