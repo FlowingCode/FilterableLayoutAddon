@@ -39,7 +39,7 @@ import java.util.Arrays;
 @PageTitle("Filterable Layout Demo")
 @DemoSource
 @Route(value = "filterablelayout/filterablelayout", layout = FilterablelayoutDemoView.class)
-@StyleSheet("context://frontend/styles/filterable-layout/demo-styles.css")
+@StyleSheet("context://styles/filterable-layout/demo-styles.css")
 public class FilterableLayoutDemo extends VerticalLayout {
 	private static final String SALES_INFORMATION = "Sales Information";
 	private static final String COMPANY_INFORMATION = "Company Information";
